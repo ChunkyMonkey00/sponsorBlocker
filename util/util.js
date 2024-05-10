@@ -12,7 +12,7 @@
 function waitForPageLoad(callback) {
     if (document.readyState === 'complete') {
         callback();
-    } else {A
+    } else {
         window.addEventListener('load', callback);
     }
 }
