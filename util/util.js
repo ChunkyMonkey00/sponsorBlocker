@@ -26,7 +26,7 @@ waitForPageLoad(function() {
         const sponsoredResultSelectors = [
             '.adsAd',
             '.adsWrapper',
-            '.sponsored-link'
+            '.sponsored-link',
             '#atvcap',
             '#taw',
         ];
@@ -35,7 +35,7 @@ waitForPageLoad(function() {
             const elements = document.querySelectorAll(selector);
             if (elements.length > 0) {
                 console.log(`Found ${elements.length} sponsored result(s) using selector "${selector}"`);
-                element.forEach((el) => {el.remove();});
+                elements.forEach((el) => {el.remove();});
             }
         });
     }
