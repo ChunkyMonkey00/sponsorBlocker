@@ -7,8 +7,16 @@
 // @match        https://www.google.com/search*
 // @grant        none
 // ==/UserScript==
+function waitForPageLoad(callback) {
+    if (document.readyState === 'complete') {
+        callback();
+    } else {A
+        window.addEventListener('load', callback);
+    }
+}
 
-(function() {
+waitForPageLoad(function() {
+    (function() {
     'use strict';
 
     // Function to identify and print sponsored results
@@ -33,3 +41,5 @@
     // Call the function to start identifying sponsored results
     identifySponsoredResults();
 })();
+
+});
