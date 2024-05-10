@@ -6,6 +6,8 @@
 // @author       Krunk
 // @match        https://www.google.com/search*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/ChunkyMonkey00/sponsorBlocker/main/util/util.js
+// @downloadURL  https://raw.githubusercontent.com/ChunkyMonkey00/sponsorBlocker/main/util/util.js
 // ==/UserScript==
 function waitForPageLoad(callback) {
     if (document.readyState === 'complete') {
